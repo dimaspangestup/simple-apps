@@ -2,10 +2,10 @@
 FROM node:18.16.0
 
 # DIRECTORY UTAMA
-WORKDIR /simple
+WORKDIR /apps
 
 # COPY FILE dari directory apps  ke workdir container /apps
-ADD apps/. /apps
+ADD . /apps
 
 # build image + install module
 RUN npm install
